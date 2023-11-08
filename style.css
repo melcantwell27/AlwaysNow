@@ -1,3 +1,13 @@
 body {
     background: blue;
   }
+
+h1 {
+    color: greenyellow;
+    margin-left: 20px;
+  }
+
+p {
+    color: red;
+    margin-left: 20px;
+  }
