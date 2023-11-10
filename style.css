@@ -1,17 +1,67 @@
 body {
-    background: blueviolet;
-  }
+  background: url(https://raw.githubusercontent.com/melcantwell27/AlwaysNow/main/MoonLightingUpClouds.jpg);
+  background-size: cover;
+  background-attachment: fixed; /* Fixed background image */
+  margin: 20px; /* Add margin to the entire page */
+}
+
+h1, h2, h3 {
+  display: block;
+  width: fit-content;
+  margin-bottom: 10px;
+  padding: 15px; /* Add padding for a softer appearance */
+  border-radius: 15px; /* Apply border-radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box-shadow for depth */
+  -webkit-text-stroke: 1px black; /* Add a consistent black border around the font */
+  text-stroke: 1px black; /* Standard syntax */
+  font-size: 3em; /* Increase font size by a factor of 3 */
+}
 
 h1 {
-    color: greenyellow;
-  
-  }
+  color: lime;
+  background-color: lavender;
+  margin-bottom: 20px;
+}
 
-  h2 {
-    color: orange
-  }
+h2, h3 {
+  color: blue;
+  background-color: lightcoral;
+}
 
 p {
-    color: red;
-    margin-left: 20px;
+  color: red;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 2em; /* Increase font size by a factor of 3 */
+}
+
+/* Additional styles for centered content */
+div {
+  text-align: center;
+}
+
+img {
+  max-width: 33.33%;
+  height: auto;
+}
+
+#ant {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url('ant.png') no-repeat center center;
+  background-size: cover;
+  animation: antWalk 5s linear infinite;
+}
+
+@keyframes antWalk {
+  0% {
+    transform: translateX(0);
   }
+  50% {
+    transform: translateX(calc(100% - 50px));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
